@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penguin Fashion</title>
+    <!-- Tailwind -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- Lord Icon -->
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        .font-poppins {
+            font-family: "Poppins", serif;
+        }
+
+        .font-bebas-neue {
+            font-family: "Bebas Neue", serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="w-full md:w-5/6 mx-auto">
+        <nav class="flex justify-around md:justify-between items-center p-6">
+            <div class="flex items-center gap-2">
+                <img src="/images/logo.png" alt="">
+                <h1 class="text-xl md:text-2xl font-bold"><span class="text-[#a4bc46]">Penguin</span> Fashion</h1>
+            </div>
+            <div class="hidden md:inline-block">
+                <ul class="flex justify-between items-center gap-3 md:gap-6 text-gray-500 font-semibold text-md">
+                    <li><a class="hover:text-[#a4bc46]" href="">Home</a></li>
+                    <li><a class="hover:text-[#a4bc46]" href="">Product</a></li>
+                    <li><a class="hover:text-[#a4bc46]" href="">About Us</a></li>
+                    <li><a class="hover:text-[#a4bc46]" href="">Contact Us</a></li>
+                </ul>
+            </div>
+                <div class="md:hidden">
+                    <img src="/icons/menu.png" alt="">
+                </div>
+        </nav>
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-2 items-center p-8 my-8">
+            <div class="mx-auto md:mx-0">
+                <h1 class="font-bebas-neue text-5xl md:text-7xl text-[#363958] mb-4"><span class="text-[#FABE4C]">Be the Penguins <br></span> of Winter</h1>
+                <p class="text-gray-500 text-sm md:text-md font-semibold mb-4">Lorem Ipsum is simply dummy text of the printing <br>
+                    and typesetting industry.</p>
+                <button
+                    class="bg-[#a4bc46] text-white text-lg font-semibold flex items-center justify-between gap-2 py-2 px-5 rounded-lg cursor-pointer hover:drop-shadow-xl">
+                    <lord-icon colors="primary:#ffffff" src="https://cdn.lordicon.com/mfmkufkr.json" trigger="loop"
+                        delay="1300" style="width:25px;height:25px">
+                    </lord-icon>
+                    Buy Now</button>
+            </div>
+            <div>
+                <img class="mx-auto mt-8" src="/images/model.png" alt="">
+            </div>
+        </section>
+    </header>
+
+</body>
+  
+
+</html>
